@@ -8,81 +8,51 @@ using static GameManager;
 
 public class PlayerController : MonoBehaviour{
 
-    private CharacterController controller;
-    private Vector3 moveDirection;
-    private float inputX, inputZ;
-    public StateMachine<GameStates> stateMachine;
-    public Rigidbody rb;
-    public LayerMask ground;
-    public float speed, jumpForce;
-    public bool grounded, jump, isWalking;
+    private Vector3 _speedVector;
+    private float _vSpeed = 0f;
+    public Animator animator;
+    public KeyCode jumpKeyCode = KeyCode.Space;
+    public CharacterController characterController;
+    public float speed = 1f, turnSpeed = 1f, jumpSpeed = 15f, gravity = -9.8f;
 
-    // Start is called before the first frame update
-    void Start(){
-        controller = GetComponent<CharacterController>();
-    }
+    [Header("Run Setup")]
+    public KeyCode keyRun = KeyCode.LeftShift;
+    public float speedRun = 1.5f;
 
     // Update is called once per frame
     void Update(){
-        Move();
-        Jump();
-        IsMove();
-        CkeckGrounded();
-        HandleInput();
-    }
 
-    void Move(){
+        transform.Rotate(0, Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime, 0);
 
-       inputX = Input.GetAxisRaw("Horizontal");
-       inputZ = Input.GetAxisRaw("Vertical");
+        var inputAxisVertical = Input.GetAxis("Vertical");
+        var speedVector = transform.forward * inputAxisVertical * speed;
 
-       moveDirection = new Vector3(inputX, 0f, inputZ).normalized;
+        if (characterController.isGrounded){
 
-       stateMachine = new StateMachine<GameStates>();
-       stateMachine.Init();
+            _vSpeed = 0;
 
-       stateMachine.RegisterState(GameStates.GAMEPLAY, new StateBase());
-       Debug.Log("GameStates " + GameStates.GAMEPLAY);
-
-       if(moveDirection.magnitude >= 0.1f){
-          controller.Move(moveDirection.normalized * Time.deltaTime * speed);
-       }
-    }
-
-    void IsMove(){
-
-        if (moveDirection.x != 0 || moveDirection.z != 0 && grounded){
-            isWalking = true;
-        }else{
-            stateMachine.RegisterState(GameStates.PAUSE, new StateBase());
-            Debug.Log("GameStates " + GameStates.PAUSE);
-            isWalking = false;
+            if (Input.GetKeyDown(jumpKeyCode)){
+                _vSpeed = jumpSpeed;
+            }
         }
-    }
 
-    void Jump(){
+        _vSpeed -= gravity * Time.deltaTime; // fazendo gravidade funcionar
+        speedVector.y = _vSpeed;
 
-        if(jump && grounded){
+        var isWalking = inputAxisVertical != 0;
+        if (isWalking){
 
-            stateMachine.RegisterState(GameStates.JUMP, new StateBase());
-            Debug.Log("GameStates " + GameStates.JUMP);
-            
-            transform.position += Vector3.up * .1f;
-            rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.y);
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            jump = false;
+            if (Input.GetKey(keyRun)){
+
+                speedVector *= speedRun;
+                animator.speed = speedRun;
+            }else{
+                animator.speed = 1;
+            }
         }
+
+        characterController.Move(speedVector * Time.deltaTime);
+
+        animator.SetBool("Run", inputAxisVertical != 0);  //verificar input Vertical
     }
-
-    void CkeckGrounded(){
-        grounded = Physics.Raycast(transform.position + Vector3.up * .1f, Vector3.down, .2f, ground);
-    }
-
-    void HandleInput(){
-
-        if(Input.GetKey(KeyCode.Space) && grounded){
-            jump = true;
-        }
-    }
-
 }
