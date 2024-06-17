@@ -15,6 +15,7 @@ public class PlayerAbilityShoot : PlayerAbilityBase{
 
     protected override void Init(){
 
+        CreateGun(gunBaseShootLimit);
         base.Init();
 
         //shootAction.performed += ctx => Shoot();
