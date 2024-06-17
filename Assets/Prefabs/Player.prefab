@@ -217,7 +217,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunPosition: {fileID: 4573526174692477583}
-  gunBase: {fileID: 4316511397965926585, guid: 3255698cb61e1b4a397673c1a44e03a0, type: 3}
+  gunBase: {fileID: 3678113554795316821, guid: fdacd47bfb492ba2e8b053a0980f4ba5, type: 3}
+  gunShootLimit: 257
+  gunAngle: 258
 --- !u!4 &6834919426875371614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: efe9925a28d32b24e89525774eeb98e5, type: 3}

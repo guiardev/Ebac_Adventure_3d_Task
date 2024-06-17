@@ -433,9 +433,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9073158923445764108, guid: b15b74b79a7274854994109be12f4f14, type: 3}
-      propertyPath: gunBase
+      propertyPath: gunAngle
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073158923445764108, guid: b15b74b79a7274854994109be12f4f14, type: 3}
+      propertyPath: gunBaseAngle
       value: 
       objectReference: {fileID: 3678113554795316821, guid: fdacd47bfb492ba2e8b053a0980f4ba5, type: 3}
+    - target: {fileID: 9073158923445764108, guid: b15b74b79a7274854994109be12f4f14, type: 3}
+      propertyPath: gunShootLimit
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073158923445764108, guid: b15b74b79a7274854994109be12f4f14, type: 3}
+      propertyPath: gunBaseShootLimit
+      value: 
+      objectReference: {fileID: 4316511397965926585, guid: 3255698cb61e1b4a397673c1a44e03a0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
