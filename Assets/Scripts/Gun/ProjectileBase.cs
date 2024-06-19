@@ -18,6 +18,11 @@ public class ProjectileBase : MonoBehaviour{
 
     private void OnCollisionEnter(Collision col){
 
+        var damageable = col.transform.GetComponent<IDamageable>();
 
+        if (damageable != null){
+            damageable.Damage(damageAmount);
+            Destroy(gameObject);
+        }
     }
 }
