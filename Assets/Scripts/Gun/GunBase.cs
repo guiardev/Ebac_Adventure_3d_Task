@@ -13,7 +13,6 @@ public class GunBase : MonoBehaviour{
     public float timeBetweenShoot = .3f, speed = 50f;
 
     protected virtual IEnumerator ShootCoroutine(){
-
         //esperar um tempo em cada tiro
         while (true){
             Shoot();
@@ -24,6 +23,7 @@ public class GunBase : MonoBehaviour{
     public virtual void Shoot(){
 
         var projectile = Instantiate(prefabProjectile);
+
         projectile.transform.position = positionToShoot.position;
         projectile.transform.rotation = positionToShoot.rotation; // fazendo tiro atira centro player e seguir rotação do player
 
@@ -32,7 +32,7 @@ public class GunBase : MonoBehaviour{
 
     public void StartShoot(){
         StopShoot();
-        _currentCoroutine = StartCoroutine(ShootCoroutine());
+        _currentCoroutine = StartCoroutine(ShootCoroutine());   
     }
 
     public void StopShoot(){
