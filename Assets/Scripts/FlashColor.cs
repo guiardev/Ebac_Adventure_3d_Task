@@ -6,6 +6,8 @@ using UnityEngine;
 public class FlashColor : MonoBehaviour{
 
     public MeshRenderer meshRenderer;
+    public SkinnedMeshRenderer skinnedMeshRenderer;
+
 
     [Header("Setup")]
     private Tween _currentTween;
