@@ -8,12 +8,16 @@ namespace Enemy{
 
     public class EnemyBase : MonoBehaviour, IDamageable{
 
-
+        private PlayerController _player;
+        [Header("Flash")]
+        public List<FlashColor> flashColors;
+        
         [SerializeField] private float _currentLife;
         public FlashColor flashColor;
         public Collider collider;
         public ParticleSystem particleSystem;
         public float startLife = 10f;
+        public bool lookAtPlayer = true;
 
         [Header("Animation")]
         [SerializeField] private AnimationBase _animationBase;
@@ -22,6 +26,10 @@ namespace Enemy{
         public Ease startAnimationEase = Ease.OutBack;
         public float startAnimationDuration = .2f;
         public bool startWithBornAnimation = true;
+
+        private void Start() {
+            _player = GameObject.FindObjectOfType<PlayerController>();
+        }
 
         private void Awake(){
             Init();
@@ -80,17 +88,27 @@ namespace Enemy{
         #endregion
 
         //debug
-        private void Update(){
+        // public virtual void Update(){
 
-            if (Input.GetKeyDown(KeyCode.T)){
-                OnDamage(5f);
-            }
-        } 
+        //     if (Input.GetKeyDown(KeyCode.T)){
+        //         OnDamage(5f);
+        //     }
+        // } 
 
         public void Damage(float damage){
-            Debug.Log("Damage");
+            flashColors.ForEach(i => i.Flash());
+        }
+
+        public void Damage(float damage, Vector3 dir){
             OnDamage(damage);
         }
 
+
+        public virtual void Update(){
+
+            if (lookAtPlayer){ // lookAtPlayer = true
+                transform.LookAt(_player.transform.position); //fazendo inimigo olhar para player
+            }
+        }
     }
 }
