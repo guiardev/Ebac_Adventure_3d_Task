@@ -7,7 +7,8 @@ namespace Game.StateMachine{
 
     public class StateBase{
 
-        public virtual void OnStateEnter(object o = null){
+        public virtual void OnStateEnter(params object[] objs){
+            Debug.Log("StateBase OnStateEnter objs " + objs);
             Debug.Log("OnStateEnter");
         }
 
