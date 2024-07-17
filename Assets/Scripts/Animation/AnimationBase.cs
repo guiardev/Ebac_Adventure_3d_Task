@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Animation{
 
     public enum AnimationType{
-        NOME, IDLE, RUN, ATTACK, DEATH
+        NOME, IDLE, WALK, ATTACK, DEATH
     }
 
     public class AnimationBase : MonoBehaviour{
