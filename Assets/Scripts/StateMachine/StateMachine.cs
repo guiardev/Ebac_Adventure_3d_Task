@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using NaughtyAttributes;
 
 namespace Game.StateMachine{
 
@@ -27,7 +27,7 @@ namespace Game.StateMachine{
             dictionaryState.Add(typeEnum, state);
         }
 
-        public void SwitchState(T state){
+        public void SwitchState(T state, params object[] objs){
 
             if (_currentState != null){
                 _currentState.OnStateExit();
