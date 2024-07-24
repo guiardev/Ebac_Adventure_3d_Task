@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GunBase : MonoBehaviour{
 
-
     private Coroutine _currentCoroutine;
     public ProjectileBase prefabProjectile;
 

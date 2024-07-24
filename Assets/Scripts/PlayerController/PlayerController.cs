@@ -19,6 +19,13 @@ public class PlayerController : MonoBehaviour{
     public KeyCode keyRun = KeyCode.LeftShift;
     public float speedRun = 1.5f;
 
+    [Header("Flash")]
+    public List<FlashColor> flashColors;
+
+    public void Damage(HealthBase h){
+        flashColors.ForEach(i => i.Flash()); // fazendo personagem piscar quando for atingindo
+    }
+    
     // Update is called once per frame
     void Update(){
 
