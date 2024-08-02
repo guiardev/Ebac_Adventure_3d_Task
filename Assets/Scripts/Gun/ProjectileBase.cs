@@ -10,6 +10,7 @@ public class ProjectileBase : MonoBehaviour{
 
     private void Awake(){
         Destroy(gameObject, timeToDestroy);
+        Debug.Log("tagsToHit " + tagsToHit);
     }
 
     // Update is called once per frame
@@ -19,18 +20,23 @@ public class ProjectileBase : MonoBehaviour{
 
     private void OnCollisionEnter(Collision col){
 
-
         foreach (var t in tagsToHit){
 
+            Debug.Log("t  " + t);
+    
             if (col.transform.tag == t){
 
                 var damageable = col.transform.GetComponent<IDamageable>();
 
                 if (damageable != null){
 
+                    Debug.Log("damageable " + damageable);
+
                     //fazendo personagem que levar tiro sentir impacto do tiro na direção oposta
                     //0,0,35
                     Vector3 dir = col.transform.position - transform.position;
+                    Debug.Log("dir " + dir);
+
                     //0,0,1
                     dir = -dir.normalized;
 
