@@ -9,6 +9,7 @@ namespace Enemy{
     public class EnemyBase : MonoBehaviour, IDamageable{
 
         private PlayerController _player;
+
         [Header("Flash")]
         public List<FlashColor> flashColors;
         
@@ -101,6 +102,16 @@ namespace Enemy{
 
         public void Damage(float damage, Vector3 dir){
             OnDamage(damage);
+        }
+
+    
+        private void OnCollisionEnter(Collision col){ // fazendo player tomar dano quando encostar no inimigo
+
+            PlayerController p = col.transform.GetComponent<PlayerController>();
+
+            if (p != null){
+                p.healthBase.Damage(1);
+            }
         }
 
 
