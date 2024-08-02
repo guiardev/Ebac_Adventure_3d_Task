@@ -10,10 +10,16 @@ public class PlayerController : MonoBehaviour{
 
     private Vector3 _speedVector;
     private float _vSpeed = 0f;
+    private bool _alive = true;
     public Animator animator;
+    public List<Collider> colliders;
     public KeyCode jumpKeyCode = KeyCode.Space;
     public CharacterController characterController;
     public float speed = 1f, turnSpeed = 1f, jumpSpeed = 15f, gravity = -9.8f;
+
+    [Header("Life")]
+    public HealthBase healthBase;
+    public UIFillUpdater uifillUpdater;
 
     [Header("Run Setup")]
     public KeyCode keyRun = KeyCode.LeftShift;
@@ -22,10 +28,59 @@ public class PlayerController : MonoBehaviour{
     [Header("Flash")]
     public List<FlashColor> flashColors;
 
+    #region VALIDATE
+
+    private void OnValidate(){
+
+        if (healthBase == null){
+            healthBase = GetComponent<HealthBase>();
+        }
+    }
+
+    private void Awake(){
+
+        OnValidate();
+        healthBase.OnDamage += Damage;
+        healthBase.OnDamage += OnKill;
+    }
+
+    #endregion
+
+    #region LIFE
+
+    private void OnKill(HealthBase h){
+
+        if (_alive){
+
+            _alive = false;
+            animator.SetTrigger("Death");
+            colliders.ForEach(i => i.enabled = false); // tirando colisão personagem
+
+            Invoke(nameof(Revive), 3f);
+        }
+    }
+
+    private void Revive(){
+
+        _alive = true;
+
+        healthBase.ResetLife();
+        animator.SetTrigger("Revive");
+
+        Respawn();
+        Invoke(nameof(TurnOnColliders), .1f);
+    }
+
+    #endregion
+
+    private void TurnOnColliders(){
+        colliders.ForEach(i => i.enabled = true); // ativando colisão personagem  
+    }
+
     public void Damage(HealthBase h){
         flashColors.ForEach(i => i.Flash()); // fazendo personagem piscar quando for atingindo
     }
-    
+
     // Update is called once per frame
     void Update(){
 
@@ -61,5 +116,13 @@ public class PlayerController : MonoBehaviour{
         characterController.Move(speedVector * Time.deltaTime);
 
         animator.SetBool("Run", inputAxisVertical != 0);  //verificar input Vertical
+    }
+
+    [NaughtyAttributes.Button]
+    public void Respawn(){
+
+        if (CheckpointManager.Instance.HasCheckpoint()){
+            transform.position = CheckpointManager.Instance.GetPositionFromLastCheckpoint();
+        }
     }
 }
