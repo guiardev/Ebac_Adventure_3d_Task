@@ -150,4 +150,4 @@ MonoBehaviour:
   - Enemy
   timeToDestroy: 1
   speed: 50
-  damageAmount: 5
+  damageAmount: 10
