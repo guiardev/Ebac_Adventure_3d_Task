@@ -1680,7 +1680,7 @@ MonoBehaviour:
   _currentLife: 0
   uiFillUpdater:
   - {fileID: 507901844}
-  startLife: 100
+  startLife: 30
   destroyOnKill: 0
 --- !u!114 &1709750201
 MonoBehaviour:

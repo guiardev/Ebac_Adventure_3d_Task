@@ -40,10 +40,8 @@ public class HealthBase : MonoBehaviour, IDamageable{
     public void Damage(float f){
 
         //transform.position -= transform.forward; // fazendo personagem que levou tiro afastar com impacto do tiro
-
+        
         _currentLife -= f;
-
-        Debug.Log("_currentLife " + _currentLife);
 
         if (_currentLife <= 0){
             Kill();
