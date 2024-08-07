@@ -12,6 +12,7 @@ public class GunBase : MonoBehaviour{
     public float timeBetweenShoot = .3f, speed = 50f;
 
     protected virtual IEnumerator ShootCoroutine(){
+
         //esperar um tempo em cada tiro
         while (true){
             Shoot();
@@ -31,13 +32,13 @@ public class GunBase : MonoBehaviour{
 
     public void StartShoot(){
         StopShoot();
-        _currentCoroutine = StartCoroutine(ShootCoroutine());   
+        _currentCoroutine = StartCoroutine(ShootCoroutine());
     }
 
     public void StopShoot(){
 
         //Shoot();
-        if (_currentCoroutine != null){
+        if (_currentCoroutine != null)  {
             StopCoroutine(_currentCoroutine);
         }
     }

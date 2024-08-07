@@ -604,7 +604,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 507901840}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34b62bb6c080e21889271088488cc608, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f58ccd1f5bdf6a049b3042e6ea0bdae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   uiImage: {fileID: 507901842}
@@ -1678,7 +1678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentLife: 0
-  uiFillUpdater:
+  uiLifeUpdater:
   - {fileID: 507901844}
   startLife: 30
   destroyOnKill: 0
@@ -1722,7 +1722,7 @@ MonoBehaviour:
   jumpSpeed: 15
   gravity: 9.8
   healthBase: {fileID: 1709750200}
-  uifillUpdater: {fileID: 507901844}
+  uifillUpdater: {fileID: 0}
   keyRun: 304
   speedRun: 7
   flashColors:
