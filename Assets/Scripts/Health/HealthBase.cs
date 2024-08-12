@@ -25,7 +25,9 @@ public class HealthBase : MonoBehaviour, IDamageable{
 
     protected virtual void Kill(){
 
-        if (destroyOnKill){
+        ShakeCamera.Instance.Shake();
+
+        if (destroyOnKill){   
             Destroy(gameObject, 2f);
         }
 
