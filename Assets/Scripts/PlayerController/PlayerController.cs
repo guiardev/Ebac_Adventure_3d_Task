@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour{
 
     public void Damage(HealthBase h){
         flashColors.ForEach(i => i.Flash()); // fazendo personagem piscar quando for atingindo
+        EffectsManager.Instance.ChangeVignette(); // fazendo efeito na tela quando personagem toma dano, o effect e PostProcessing  
     }
 
     // Update is called once per frame
