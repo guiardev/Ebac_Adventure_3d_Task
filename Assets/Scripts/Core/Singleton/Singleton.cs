@@ -9,11 +9,11 @@ namespace Core.Singleton{
 
         public static T Instance;
 
-        private void Awake(){
+        protected virtual void Awake(){
 
             //verificando se tem instance objeto GameManager
             if(Instance == null){
-                Instance = GetComponent<T>(); // pegando componente dando para referencia   
+                Instance = GetComponent<T>(); // pegando componente dando para referencia
             }else{
                 Destroy(gameObject);
             }
