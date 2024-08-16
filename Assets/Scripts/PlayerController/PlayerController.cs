@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using Game.StateMachine;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using static GameManager;
+using Core.Singleton;
 
-public class PlayerController : MonoBehaviour{
+public class PlayerController : Singleton<PlayerController>{
 
     private Vector3 _speedVector;
     private float _vSpeed = 0f;
@@ -37,12 +34,16 @@ public class PlayerController : MonoBehaviour{
         }
     }
 
-    private void Awake(){
+    protected override void Awake(){
+
+        base.Awake();
 
         OnValidate();
         healthBase.OnDamage += Damage;
         healthBase.OnKill += OnKill;
     }
+
+
 
     #endregion
 
