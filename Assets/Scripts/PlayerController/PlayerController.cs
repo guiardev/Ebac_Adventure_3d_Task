@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Core.Singleton;
+using Cloth;
 
 public class PlayerController : Singleton<PlayerController>{
 
@@ -25,6 +26,9 @@ public class PlayerController : Singleton<PlayerController>{
     [Header("Flash")]
     public List<FlashColor> flashColors;
 
+    [Space]
+    [SerializeField] private ClothChanger _clothChanger;
+
     #region VALIDATE
 
     private void OnValidate(){
@@ -42,8 +46,6 @@ public class PlayerController : Singleton<PlayerController>{
         healthBase.OnDamage += Damage;
         healthBase.OnKill += OnKill;
     }
-
-
 
     #endregion
 
@@ -127,4 +129,50 @@ public class PlayerController : Singleton<PlayerController>{
             transform.position = CheckpointManager.Instance.GetPositionFromLastCheckpoint();
         }
     }
+
+    public void ChangeSpeed(float speed, float duration){
+        StartCoroutine(ChangeSpeedCoroutine(speed, duration));
+    }
+
+    IEnumerator ChangeSpeedCoroutine(float localSpeed, float duration){
+
+        var defaultSpeed = speed;
+        speed = localSpeed;
+
+        yield return new WaitForSeconds(duration);
+
+        speed = defaultSpeed;
+
+        _clothChanger.ResetTexture();
+    }
+
+    public void ChangeJump(float jump, float duration){
+        StartCoroutine(ChangeJumpCoroutine(jump, duration));
+    }
+
+    IEnumerator ChangeJumpCoroutine(float localJump, float duration){
+
+        var defaultJump = jumpSpeed;
+        jumpSpeed = localJump;
+
+        yield return new WaitForSeconds(duration);
+
+        jumpSpeed = defaultJump;
+
+        _clothChanger.ResetTexture();
+    }
+
+    public void ChangeTexture(ClothSetup setup, float duration){
+        StartCoroutine(ChangeTextureCoroutine(setup, duration));
+    }
+
+    IEnumerator ChangeTextureCoroutine(ClothSetup setup, float duration){
+
+        _clothChanger.ChangeTexture(setup);
+
+        yield return new WaitForSeconds(duration);
+
+        _clothChanger.ResetTexture();
+    }
+
 }
