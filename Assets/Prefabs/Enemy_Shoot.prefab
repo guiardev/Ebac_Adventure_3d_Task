@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8051604639132043200}
   m_Layer: 0
   m_Name: Enemy_Shoot
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   flashColor: {fileID: 1797824493436821394}
   collider: {fileID: 1247892462161769023}
   particleSystem: {fileID: 2342491950997459421}
-  startLife: 10
+  startLife: 100
   lookAtPlayer: 1
   _animationBase: {fileID: 8051604639132043200}
   startAnimationEase: 27
@@ -5159,8 +5159,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshRenderer: {fileID: 5857135665550145522}
+  skinnedMeshRenderer: {fileID: 0}
   color: {r: 1, g: 0, b: 0, a: 1}
   duration: 0.1
+  colorParameter: _EmissionColor
 --- !u!4 &3167475108501299606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1432951499188351216, guid: f99bbd0754201f448b27f0c455b92b76, type: 3}
@@ -5180,6 +5182,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 4879186014246251128}
     m_Modifications:
     - target: {fileID: 559897726836771730, guid: 377dedef36fc2b253a37d84b24a078f0, type: 3}
+      propertyPath: prefabProjectile
+      value: 
+      objectReference: {fileID: 3152415313120013482, guid: c1b7cd930a4d0725fa7ad86868d6b486, type: 3}
+    - target: {fileID: 559897726836771730, guid: 377dedef36fc2b253a37d84b24a078f0, type: 3}
       propertyPath: timeBetweenShoot
       value: 1.5
       objectReference: {fileID: 0}
@@ -5193,11 +5199,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4468547542438540248, guid: 377dedef36fc2b253a37d84b24a078f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.507
+      value: 1.104
       objectReference: {fileID: 0}
     - target: {fileID: 4468547542438540248, guid: 377dedef36fc2b253a37d84b24a078f0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.6999998
+      value: 0.313
       objectReference: {fileID: 0}
     - target: {fileID: 4468547542438540248, guid: 377dedef36fc2b253a37d84b24a078f0, type: 3}
       propertyPath: m_LocalRotation.w

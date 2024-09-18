@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9046727607165544648}
   m_Layer: 0
   m_Name: WalkEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4969,7 +4969,7 @@ GameObject:
   - component: {fileID: 596573495320925197}
   m_Layer: 0
   m_Name: Enemy_1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5051,21 +5051,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fddd0ac701bb54308baa032751f99a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashColors: []
   _currentLife: 0
   flashColor: {fileID: 1522953626936791910}
   collider: {fileID: 5245539181761344748}
   particleSystem: {fileID: 2133933601106522388}
-  startLife: 10
+  startLife: 100
+  lookAtPlayer: 0
   _animationBase: {fileID: 596573495320925197}
   startAnimationEase: 27
   startAnimationDuration: 0.2
   startWithBornAnimation: 1
+  animationBase: {fileID: 596573495320925197}
   waypoints:
   - {fileID: 6275210199241358410}
   - {fileID: 2514438375444082267}
   - {fileID: 7093807420303374560}
   minDistance: 1
-  speed: 5
+  speed: 3
 --- !u!114 &596573495320925197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5144,7 +5147,7 @@ Transform:
   m_GameObject: {fileID: 7093807420303374560}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.43, y: 0, z: -9.99}
+  m_LocalPosition: {x: 5.84, y: 0, z: 0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5313,8 +5316,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshRenderer: {fileID: 1673756283928931240}
+  skinnedMeshRenderer: {fileID: 0}
   color: {r: 1, g: 0, b: 0, a: 1}
   duration: 0.1
+  colorParameter: _EmissionColor
 --- !u!4 &845553870519166315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1432951499188351216, guid: f99bbd0754201f448b27f0c455b92b76, type: 3}

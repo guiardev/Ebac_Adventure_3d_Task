@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerAbilityShoot : PlayerAbilityBase{
 
     private GunBase _currentGun;
+    public FlashColor flashColor;
     public Transform gunPosition;
     public GunBase gunBaseShootLimit, gunBaseAngle;
 
@@ -13,8 +14,8 @@ public class PlayerAbilityShoot : PlayerAbilityBase{
     public KeyCode gunShootLimit = KeyCode.Alpha1;
     public KeyCode gunAngle = KeyCode.Alpha2;
 
-    protected override void Init(){
-
+    protected override void Init(){ 
+        
         CreateGun(gunBaseShootLimit);
         base.Init();
 
@@ -43,6 +44,7 @@ public class PlayerAbilityShoot : PlayerAbilityBase{
 
     private void StartShoot(){
         _currentGun.StartShoot();
+        flashColor?.Flash();
         Debug.Log("Start Shoot");
     }
 

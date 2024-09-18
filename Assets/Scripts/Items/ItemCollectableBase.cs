@@ -35,9 +35,9 @@ namespace Itens{
             //Debug.Log("Collect");
             //gameObject.SetActive(false);
 
-            if(collider != null) collider.enabled = false; // verificando collider para nao repetir passar do valor de novo.
+            if(collider != null) collider.enabled = false; // verificando collider para não repetir passar do valor de novo.
 
-            if(graphicItem != null) graphicItem.SetActive(false); //checando se object nao esta null para nao fica travando game
+            if(graphicItem != null) graphicItem.SetActive(false); //checando se object não esta null para não fica travando game
             Invoke("HideObject", timeToHide); // invoke chama um método por um tempo, para esperar efeitos das partículas antes do objeto ser destrói-o
             OnCollect();
         }
@@ -48,7 +48,10 @@ namespace Itens{
 
         protected virtual void OnCollect(){
 
-            if (particleSystem != null) particleSystem.Play();
+            if (particleSystem != null){
+                particleSystem.Play();
+            }
+
             if (audioSource != null) audioSource.Play();
 
             ItemManager.Instance.AddByType(itemType);
