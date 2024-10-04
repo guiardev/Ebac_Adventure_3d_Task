@@ -9,7 +9,7 @@ public class PlayLevel : MonoBehaviour{
 
     // Start is called before the first frame update
     void Start(){
-        SaveManager.Instance.fileLoadedAction += OnLoad;
+        SaveManager.Instance.FileLoaded += OnLoad;
     }
 
     public void OnLoad(SaveSetup setup){
@@ -17,6 +17,6 @@ public class PlayLevel : MonoBehaviour{
     }
 
     private void OnDestroy() {
-        SaveManager.Instance.fileLoadedAction -= OnLoad;
+        SaveManager.Instance.FileLoaded -= OnLoad;
     }
 }
