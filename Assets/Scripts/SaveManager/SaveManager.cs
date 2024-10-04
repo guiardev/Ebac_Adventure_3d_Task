@@ -12,24 +12,24 @@ public class SaveManager : Singleton<SaveManager>{
     // streamingAssetsPath salva dentro da pasta StreamingAssets que vai estar na pasta do projeto no Assets
     private string _path = Application.streamingAssetsPath + "/save.txt";
 
-    public Action<SaveSetup> fileLoadedAction;
+    public Action<SaveSetup> FileLoaded;
 
     public int lastLevel;
 
     public SaveSetup Setup{
 
-        get{ return _saveSetup; }
+        get{ return _saveSetup; } //pegando class e suas variáveis
     }
 
     protected override void Awake() {
 
+        base.Awake();
         DontDestroyOnLoad(gameObject);
 
         // _saveSetup = new SaveSetup(); // uma nova instância SaveSetup
         // _saveSetup.lastLevel = 2;
         // _saveSetup.playerName = "guigamer";
 
-        base.Awake();
     }
 
     private void CreateNewSave(){
@@ -82,7 +82,6 @@ public class SaveManager : Singleton<SaveManager>{
 
     #endregion
 
-
     private void SaveFile(string json){
 
         // dataPath sava o arquivo dentro do projeto
@@ -107,18 +106,26 @@ public class SaveManager : Singleton<SaveManager>{
 
         if(File.Exists(_path)){
 
-            fileLoaded = File.ReadAllText(_path); //carregando arquivo load
+            fileLoaded = File.ReadAllText(_path); //carregando arquivo load em json para string
+
+            Debug.Log("string fileLoaded = File.ReadAllText(_path) = " + fileLoaded);
 
             _saveSetup = JsonUtility.FromJson<SaveSetup>(fileLoaded); // convertendo para json o fileLoaded
+            Debug.Log("_saveSetup " + _saveSetup);
 
             lastLevel = _saveSetup.lastLevel;
+            Debug.Log("lastLevel " + lastLevel);
         }else{
            CreateNewSave();
            Save();  
         }
 
+        if(FileLoaded == null){
+            Debug.Log("FileLoaded " + FileLoaded);
+        }else{
+            FileLoaded.Invoke(_saveSetup);
+        }
 
-        fileLoadedAction.Invoke(_saveSetup);
     }
 
     [NaughtyAttributes.Button]
