@@ -17,6 +17,12 @@ namespace Itens{
 
         private void Start(){
             Reset();
+            LoadItemsFromSave();
+        }
+    
+        private void LoadItemsFromSave(){
+            AddByType(ItemType.COIN, (int) SaveManager.Instance.Setup.coins);
+            AddByType(ItemType.LIFE_PACK, (int) SaveManager.Instance.Setup.health);
         }
 
         private void Reset(){
@@ -35,6 +41,9 @@ namespace Itens{
 
         public void AddByType(ItemType itemType, int amount = 1){
 
+            Debug.Log("AddByType ItemType " + itemType);
+            Debug.Log("AddByType amount " + amount);
+
             if(amount < 0) return; // se numero for menor 0 ele para aqui
 
             itemSetups.Find(i => i.itemType == itemType).soInt.value += amount;
@@ -45,7 +54,7 @@ namespace Itens{
             var item = itemSetups.Find(i => i.itemType == itemType);
             item.soInt.value -= amount;
 
-            //checagem para verificar se valor esta menor que 0 para resetar valor
+            //checagem para verificar se valor esta menor que 0 para reset valor
             if(item.soInt.value < 0) item.soInt.value = 0;
         }
 
@@ -55,7 +64,7 @@ namespace Itens{
         }
 
         [NaughtyAttributes.Button]
-        private void AddLifePack    (){
+        private void AddLifePack(){
             AddByType(ItemType.LIFE_PACK);
         }
 
