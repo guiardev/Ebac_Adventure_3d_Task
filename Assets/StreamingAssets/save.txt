@@ -1,6 +1,6 @@
 {
     "lastLevel": 1,
-    "coins": 7.0,
+    "coins": 72.0,
     "health": 2.0,
     "playerName": "guigamer"
 }
