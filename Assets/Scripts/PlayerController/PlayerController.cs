@@ -34,6 +34,9 @@ public class PlayerController : Singleton<PlayerController>{
     public KeyCode AudioMixerStart = KeyCode.N;
     public SFXType sfxType;
 
+    [Header("QUIT")]
+    public KeyCode QuitKey = KeyCode.Q;
+
     [Space]
     [SerializeField] private ClothChanger _clothChanger;
 
@@ -111,6 +114,13 @@ public class PlayerController : Singleton<PlayerController>{
         }else if (Input.GetKeyDown(AudioMixerStart)){
             snapshotStart.TransitionTo(.1f);
         }
+
+        if(Input.GetKeyDown(QuitKey)){
+            Application.Quit();
+            Debug.Log("QuitKey");
+        }
+       
+        
 
         if (characterController.isGrounded){
 
