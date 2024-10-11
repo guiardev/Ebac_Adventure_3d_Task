@@ -6,6 +6,9 @@ namespace Cloth{
     
     public class ClothItemBase : MonoBehaviour{
 
+        [Header("SFX")]
+        public SFXType sfxType;
+        
         public ClothType clothType;
         public float duration = 2f;
 
