@@ -294,6 +294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagsToHit:
   - Enemy
+  sfxType: 2
   timeToDestroy: 1
   speed: 50
   damageAmount: 10
