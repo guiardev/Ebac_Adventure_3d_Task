@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Core.Singleton;
+using UnityEngine.Audio;
 using Cloth;
 
 public class PlayerController : Singleton<PlayerController>{
@@ -25,6 +26,13 @@ public class PlayerController : Singleton<PlayerController>{
 
     [Header("Flash")]
     public List<FlashColor> flashColors;
+
+    [Header("SFX")]
+    public AudioMixerSnapshot snapshotStart;
+    public AudioMixerSnapshot snapshotStopAudio;
+    public KeyCode AudioMixerStop = KeyCode.M;
+    public KeyCode AudioMixerStart = KeyCode.N;
+    public SFXType sfxType;
 
     [Space]
     [SerializeField] private ClothChanger _clothChanger;
@@ -76,6 +84,10 @@ public class PlayerController : Singleton<PlayerController>{
 
     #endregion
 
+    private void PlaySFX(){
+        SFXPool.Instance.Play(sfxType);
+    }
+
     private void TurnOnColliders(){
         colliders.ForEach(i => i.enabled = true); // ativando colisão personagem  
     }
@@ -93,11 +105,19 @@ public class PlayerController : Singleton<PlayerController>{
         var inputAxisVertical = Input.GetAxis("Vertical");
         var speedVector = transform.forward * inputAxisVertical * speed;
 
+        if(Input.GetKeyDown(AudioMixerStop)){
+            snapshotStopAudio.TransitionTo(.1f);
+            //Debug.Log("snapshotStopAudio " + snapshotStopAudio);
+        }else if (Input.GetKeyDown(AudioMixerStart)){
+            snapshotStart.TransitionTo(.1f);
+        }
+
         if (characterController.isGrounded){
 
             _vSpeed = 0;
 
             if (Input.GetKeyDown(jumpKeyCode)){
+                PlaySFX();
                 _vSpeed = jumpSpeed;
             }
         }
