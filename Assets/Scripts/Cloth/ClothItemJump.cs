@@ -8,8 +8,13 @@ namespace Cloth{
 
         public float targetJump = 15f;
 
+        private void PlaySFX(){
+            SFXPool.Instance.Play(sfxType);
+        }
+
         public override void Collect(){
 
+            PlaySFX();
             base.Collect();
             PlayerController.Instance.ChangeJump(targetJump, duration);
         }
