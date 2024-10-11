@@ -4900,6 +4900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 0
+  sfxType: 1
   collider: {fileID: 5111713578761159018}
   particleSystem: {fileID: 1969950795709360240}
   graphicItem: {fileID: 8186551083416488515}
