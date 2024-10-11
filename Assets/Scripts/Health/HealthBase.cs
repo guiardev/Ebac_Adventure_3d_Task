@@ -11,12 +11,19 @@ public class HealthBase : MonoBehaviour, IDamageable{
     public float startLife, damageMultiply = 1;
     public bool destroyOnKill = false;
 
+    [Header("Flash")]
+    public SFXType sfxType;
+
     private void Awake(){
         Init();
     }
 
     public void Init(){
         ResetLife();
+    }
+
+     private void PlaySFX(){
+        SFXPool.Instance.Play(sfxType);
     }
 
     public void ResetLife(){
@@ -43,6 +50,8 @@ public class HealthBase : MonoBehaviour, IDamageable{
     public void Damage(float f){
 
         //transform.position -= transform.forward; // fazendo personagem que levou tiro afastar com impacto do tiro
+
+        PlaySFX();
         
         _currentLife -= f * damageMultiply; // damageMultiply tendo noção exata que esta mudando.
 
