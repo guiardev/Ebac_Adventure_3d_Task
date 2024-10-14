@@ -14,7 +14,7 @@ namespace Core.Singleton{
             //verificando se tem instance objeto GameManager
             if(Instance == null){
                 Instance = GetComponent<T>(); // pegando componente dando para referencia
-                DontDestroyOnLoad(Instance);
+                DontDestroyOnLoad(Instance); // add DontDestroyOnLoad para todo script que estiver associado com Singleton nao vai ser destruído por muda se cena
             }else{
                 Destroy(gameObject);
             }
