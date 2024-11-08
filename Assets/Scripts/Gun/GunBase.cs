@@ -7,9 +7,10 @@ public class GunBase : MonoBehaviour{
     private Coroutine _currentCoroutine;
     public ProjectileBase prefabProjectile;
 
-    public Transform positionToShoot;
+    public Transform positionToShoot, playerDistance;
     //public KeyCode keyCode = KeyCode.S;
-    public float timeBetweenShoot = .3f, speed = 50f;
+    public float timeBetweenShoot = .3f, speed = 50f, distance;
+    public int startDistanceShoot = 30;
 
     protected virtual IEnumerator ShootCoroutine(){
 
@@ -20,14 +21,22 @@ public class GunBase : MonoBehaviour{
         }
     }
 
+    private void Update() {
+        distance = Vector3.Distance(this.transform.position, playerDistance.position); // verificando distancia do player
+    }
+
     public virtual void Shoot(){
 
-        var projectile = Instantiate(prefabProjectile);
 
-        projectile.transform.position = positionToShoot.position;
-        projectile.transform.rotation = positionToShoot.rotation; // fazendo tiro atira centro player e seguir rotação do player
+        if(distance < startDistanceShoot){
 
-        projectile.speed = speed;
+            var projectile = Instantiate(prefabProjectile);
+
+            projectile.transform.position = positionToShoot.position;
+            projectile.transform.rotation = positionToShoot.rotation; // fazendo tiro atira centro player e seguir rotação do player
+
+            projectile.speed = speed;
+        }
     }
 
     public void StartShoot(){
