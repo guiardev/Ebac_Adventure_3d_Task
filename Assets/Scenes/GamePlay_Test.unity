@@ -2013,6 +2013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5245539181761344748, guid: 1f3c3b82050ad89e895c7f8801b5e941, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9046727607165544648, guid: 1f3c3b82050ad89e895c7f8801b5e941, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2235,7 +2239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 755814520205900776, guid: ec6f00affb2b88092bfbdd93324fa142, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.28453076
+      value: -0.2845308
       objectReference: {fileID: 0}
     - target: {fileID: 1067508585448216221, guid: ec6f00affb2b88092bfbdd93324fa142, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2271,11 +2275,11 @@ PrefabInstance:
       objectReference: {fileID: 1709750204}
     - target: {fileID: 5724590926897643099, guid: ec6f00affb2b88092bfbdd93324fa142, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016385561
+      value: 0.000000016385561
       objectReference: {fileID: 0}
     - target: {fileID: 5724590926897643099, guid: ec6f00affb2b88092bfbdd93324fa142, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000052509987
+      value: -0.0000000052509987
       objectReference: {fileID: 0}
     - target: {fileID: 8324543323427821624, guid: ec6f00affb2b88092bfbdd93324fa142, type: 3}
       propertyPath: m_Follow
