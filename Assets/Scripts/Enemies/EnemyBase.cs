@@ -15,8 +15,8 @@ namespace Enemy{
         
         [SerializeField] private float _currentLife;
         public FlashColor flashColor;
-        public Collider collider;
         public ParticleSystem particleSystem;
+        public Collider collider;
         public float startLife = 10f;
         public bool lookAtPlayer = true;
 
