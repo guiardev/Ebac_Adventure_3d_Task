@@ -1511,6 +1511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PFB_ItemClothJump
       objectReference: {fileID: 0}
+    - target: {fileID: 3780110329782003867, guid: 5ce185a952bcbde25ab948da3304c38d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4828419197151327309, guid: 5ce185a952bcbde25ab948da3304c38d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.19
@@ -2257,7 +2261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5724590926897643099, guid: ec6f00affb2b88092bfbdd93324fa142, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000001638556
+      value: -0.000000016385561
       objectReference: {fileID: 0}
     - target: {fileID: 5724590926897643099, guid: ec6f00affb2b88092bfbdd93324fa142, type: 3}
       propertyPath: m_LocalRotation.z
