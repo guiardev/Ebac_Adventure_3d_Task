@@ -14,6 +14,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </style>
   </head>
 
+  <body>
+
   <table border="0">
     <tr>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_019.gif" width="250" height="300"/></td>
@@ -21,5 +23,7 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_026.gif" width="250" height="300"/></td>
     </tr>
   </table>
-  
+     
+  </body>
+
 </html>
