@@ -6,11 +6,13 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
 
 <html>
 
-  <style>
-    table, th, td {
-      border: 0;
-    }
-  </style>
+   <head>
+    <style>
+      table, th, td {
+        border: 0;
+      }
+    </style>
+  </head>
 
   <table border="0">
     <tr>
