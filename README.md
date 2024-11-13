@@ -6,7 +6,7 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
 
 
 <html>
-  <img src=<![Screenshots](https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_019.gif)>  height="75">
+  <img src=<https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_019.gif)>  height="75">
 </html>
 ![Screenshots](https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_019.gif)
 
