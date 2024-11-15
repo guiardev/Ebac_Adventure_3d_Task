@@ -15,8 +15,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
   </table>
 </html>
 
-    Mostrando screenshot das configurações scripts e do inspector player: playerController e playerAbilityShoot, 
-    healthBase. E tem especificação character controller e box collider.
+   # Mostrando screenshot das configurações scripts e do inspector player: playerController e playerAbilityShoot, 
+   # healthBase. E tem especificação character controller e box collider.
     
 <html>
 
