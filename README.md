@@ -14,7 +14,7 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
-    <h1>Esse jogo é 3D e permite controlar um personagem que pode andar para todos lados e atira, 
-    pula e pegar moedas e lifePack e também powerUps</h1>
+    <p>Esse jogo é 3D e permite controlar um personagem que pode andar para todos lados e atira, 
+    pula e pegar moedas e lifePack e também powerUps</p>
 
 </html>
