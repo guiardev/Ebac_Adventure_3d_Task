@@ -13,9 +13,12 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_026.gif" width="230" height="300"/></td>
     </tr>
   </table>
+</html>
 
     Mostrando screenshot das configurações scripts e do inspector player: playerController e playerAbilityShoot, 
     healthBase. E tem especificação character controller e box collider.
+    
+<html>
 
   <table border="0">
     <tr>
@@ -24,7 +27,5 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_transform-chanactarController-boxCollider.png" width="230" height="300"/></td>
     </tr>
   </table>
-
-    
-
+  
 </html>
