@@ -34,14 +34,14 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
    <table border="0">
     <tr>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_027.gif" width="330" height="400"/></td>
-      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img-knob-shoot.png" width="630" height="300"/></td>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img-knob-shoot.png" width="330" height="400"/></td>
     </tr>
   </table>
 
   O jogo tem 3 tipos powerUps ItemClothStrong e ItemClothSpeed, ItemClothJump os powerUps pode dar poderes ao jogador por um segundos,
   como aumentar velocidade do player dar mais força e dar pula maior e também muda cor da roupa do player
 
-  <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_powerUps.png" width="230" height="600"/></td>
+  <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_powerUps.png" width="630" height="300"/></td>
 
   
 </html>
