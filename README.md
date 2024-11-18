@@ -40,4 +40,3 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
   
   
 </html>
-3
