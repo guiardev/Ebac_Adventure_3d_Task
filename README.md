@@ -43,7 +43,6 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
 
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_powerUps.png" width="630" height="300"/></td>
 
-  Aqui animacoes que vai mostrar acao do cada powerUps.
 
   
 
