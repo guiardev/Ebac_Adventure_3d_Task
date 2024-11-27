@@ -46,7 +46,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
 
   <table border="0">
     <tr>
-      <td>PowerUps - Super Jump <img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_037.gif" width="230" height="300"/></td>
+      PowerUps - Super Jump
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_037.gif" width="230" height="300"/></td>
       PowerUps - Super Speed
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_038.gif" width="230" height="300"/></td>
       PowerUps - Super Strong
