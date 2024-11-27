@@ -55,7 +55,7 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
-  Aqui 3 screenshoot dos configurações do powerUps:
+  Aqui 3 screenshot dos configurações do powerUps:
 
   <table border="0">
     <tr>
