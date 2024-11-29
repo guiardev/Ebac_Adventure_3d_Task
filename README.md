@@ -27,6 +27,9 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_transform-chanactarController-boxCollider.png" width="230" height="300"/></td>
     </tr>
   </table>
+  
+  O player vai ter um barra de life em cima da cabeça quando personagem for atingido pelo inimigo a barra vai diminuir, 
+  se barra da vida abarcar o player morre.
 
   O personagem pode atirar por um tiros limitado e tem barra circular cada tiro que o jogador tirar da barra diminui seu tamanho, 
   e quando barra circular desaparecer o player vai ficar uns segundos sem poder atirar e barra volta seu tamanho original.
