@@ -85,6 +85,14 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_Enemy_shoot.png" width="330" height="400"/></td>
     </tr>
   </table>
+
+  <table border="0">
+      Enemy Walk - Script EnemyWalk
+    <tr>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_043.gif" width="330" height="400"/></td>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_Enemy_Walk.png" width="330" height="400"/></td>
+    </tr>
+  </table>
   
   
 </html>
