@@ -35,7 +35,7 @@ namespace Game.StateMachine{
 
             _currentState = dictionaryState[state];
 
-            _currentState.OnStateEnter();
+            _currentState.OnStateEnter(objs);
         }
 
         // Update is called once per frame
