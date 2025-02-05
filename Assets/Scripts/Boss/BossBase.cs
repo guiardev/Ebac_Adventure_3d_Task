@@ -37,6 +37,7 @@ namespace Boss{
             stateMachine.Init();
 
             Debug.Log("stateMachine " + stateMachine);
+            //se jogador clicar botão qual estado ele vai ativar
             stateMachine.RegisterState(BossAction.INIT, new BossStatesInit());
             stateMachine.RegisterState(BossAction.WALK, new BossStatesWalk());
             stateMachine.RegisterState(BossAction.ATTACK, new BossStatesAttack());
@@ -72,6 +73,7 @@ namespace Boss{
 
         public void GoToRandomPoint(Action onArrive = null){
             StartCoroutine(GoToPointCoroutine(waypoints[UnityEngine.Random.Range(0, waypoints.Count)], onArrive));
+            Debug.Log("waypoints " + waypoints);
         }
 
         IEnumerator GoToPointCoroutine(Transform t, Action onArrive = null){
@@ -79,6 +81,7 @@ namespace Boss{
             //fazendo boss mover com um distancia
             while (Vector3.Distance(transform.position, t.position) > 1f){
                 transform.position = Vector3.MoveTowards(transform.position, t.position, Time.deltaTime * speed);
+                Debug.Log("transform.position " + transform.position);
                 yield return new WaitForEndOfFrame();
             }
 
