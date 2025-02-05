@@ -30,9 +30,10 @@ namespace Boss{
     }
 
     public class BossStatesWalk : BossStateBase{
-
+        
         public override void OnStateEnter(params object[] objs){
 
+            Debug.Log("OnStateEnter ");
             base.OnStateEnter(objs);
             boss.GoToRandomPoint(OnArrive);
         }
@@ -42,7 +43,7 @@ namespace Boss{
         }
 
         public override void OnStateExit(){
-            Debug.Log("Exit Attack");
+            //Debug.Log("Exit Attack");
             base.OnStateExit();
             boss.StopAllCoroutines();
         }
