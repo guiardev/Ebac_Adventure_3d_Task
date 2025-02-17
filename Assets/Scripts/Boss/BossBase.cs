@@ -73,7 +73,8 @@ namespace Boss{
 
         public void GoToRandomPoint(Action onArrive = null){
             StartCoroutine(GoToPointCoroutine(waypoints[UnityEngine.Random.Range(0, waypoints.Count)], onArrive));
-            Debug.Log("waypoints " + waypoints);
+            Debug.Log("waypoints --> " + waypoints);
+            Debug.Log("onArrive -->  " + onArrive);
         }
 
         IEnumerator GoToPointCoroutine(Transform t, Action onArrive = null){
@@ -82,10 +83,12 @@ namespace Boss{
             while (Vector3.Distance(transform.position, t.position) > 1f){
                 transform.position = Vector3.MoveTowards(transform.position, t.position, Time.deltaTime * speed);
                 Debug.Log("transform.position " + transform.position);
-                yield return new WaitForEndOfFrame();
+                Debug.Log("Transform t " + t);
+                yield return null;
             }
+            
 
-            //if(onArrive != null) onArrive.Invoke();
+            //if(onArrive != null) onArrive.Invoke(); = ?
             onArrive?.Invoke();
         }
 
