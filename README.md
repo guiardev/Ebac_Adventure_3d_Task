@@ -146,6 +146,12 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
 
   O GameObject VFX_Rain vai estar com configurações Particle System que está simulando chuva.
 
+  <table>
+      <tr>
+          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_vfx.gif" width="230" height="300"/></td>
+      </tr>
+  </table>
+
    <table>
         <tr>
           VFX_Rain - Particle System - Emission - Shape
@@ -153,6 +159,7 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem_Emission_Shape.png" width="330" height="400"/></td>
         </tr>
   </table>
+  
   <table>
         <tr>
           Size over Lifetime - Rotation over Lifetime - Noise - Renderer
