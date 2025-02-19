@@ -75,10 +75,21 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
+ O jogo vai ter árvores que podem ser destruídas com os tiros, cada tiro que acerta árvores sai moedas. Até a árvore perder toda sua vida.
+
+  <table border="0">
+      Enemy Shoot - Script EnemyShoot
+    <tr>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_DestructableItemBase_HealthBase.png" width="330" height="400"/></td>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_034_Tree_Coins.gif" width="330" height="400"/></td>
+    </tr>
+  </table>
+ 
+
   O jogo vai ter 2 tipos de inimigo um e o Enemy Shoot que vai ficar parado e vai atirar quando player fica perto dele e vai mirar no personagem, 
   outro Enemy Walk que vai seguir um caminho programado pelos objetos waypoints point_a, point_b e point_c que ele vai seguir.
 
-   <table border="0">
+  <table border="0">
       Enemy Shoot - Script EnemyShoot
     <tr>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_042.gif" width="330" height="400"/></td>
