@@ -75,10 +75,10 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
- O jogo vai ter árvores que podem ser destruídas com os tiros, cada tiro que acerta árvores sai moedas. Até a árvore perder toda sua vida.
+ O jogo vai ter árvores que podem ser destruídas com os tiros cada tiro que acerta árvores sai moedas, até a árvore perder toda sua vida e vai ser morre.
 
   <table border="0">
-      Enemy Shoot - Script EnemyShoot
+      Tree - Script DestructableItemBase
     <tr>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_DestructableItemBase_HealthBase.png" width="330" height="400"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_034_Tree_Coins.gif" width="330" height="400"/></td>
@@ -132,6 +132,13 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
         <tr>
            Quando inimigo chegar no waypoint ele vai ataque e depois ele segue outro waypoint.
            <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_5.gif" width="230" height="300"/></td>
+        </tr>
+  </table>
+
+  <table>
+        <tr>
+           CinemachineStateDrivenCamera está configurado 3 câmera virtual e opções Follow e Look At está selecionado player.
+           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_DrivenCamera.png" width="230" height="300"/></td>
         </tr>
   </table>
   
