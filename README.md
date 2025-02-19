@@ -135,11 +135,21 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
         </tr>
   </table>
 
+  CinemachineStateDrivenCamera está configurado 3 câmera virtual e opções Follow e Look At está selecionado player.
+  
   <table>
         <tr>
-          CinemachineStateDrivenCamera está configurado 3 câmera virtual e opções Follow e Look At está selecionado player./br
           Câmera - CinemachineStateDrivenCamera
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_DrivenCamera.png" width="230" height="300"/></td>
+        </tr>
+  </table>
+
+  O GameObject VFX_Rain vai estar com configurações Particle System que está simulando chuva.
+
+   <table>
+        <tr>
+          VFX_Rain - Particle System
+          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem.png" width="230" height="300"/></td>
         </tr>
   </table>
   
