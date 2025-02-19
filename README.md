@@ -140,7 +140,7 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
   <table>
         <tr>
           Câmera - CinemachineStateDrivenCamera
-          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_DrivenCamera.png" width="230" height="300"/></td>
+          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_DrivenCamera.png" width="330" height="400"/></td>
         </tr>
   </table>
 
@@ -149,7 +149,7 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
    <table>
         <tr>
           VFX_Rain - Particle System
-          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem.png" width="230" height="300"/></td>
+          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem.png" width="330" height="400"/></td>
         </tr>
   </table>
   
