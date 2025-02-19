@@ -152,6 +152,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem.png" width="330" height="400"/></td>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem_Emission_Shape.png" width="330" height="400"/></td>
         </tr>
+  </table>
+  <table>
         <tr>
           Size over Lifetime - Rotation over Lifetime - Noise - Renderer
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem_Size-over-Lifetime_Rotation-over-Lifetime_Noise.png" width="330" height="400"/</td>
