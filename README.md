@@ -137,8 +137,9 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
 
   <table>
         <tr>
-           CinemachineStateDrivenCamera está configurado 3 câmera virtual e opções Follow e Look At está selecionado player.
-           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_DrivenCamera.png" width="230" height="300"/></td>
+          CinemachineStateDrivenCamera está configurado 3 câmera virtual e opções Follow e Look At está selecionado player.
+          Câmera - CinemachineStateDrivenCamera
+          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_DrivenCamera.png" width="230" height="300"/></td>
         </tr>
   </table>
   
