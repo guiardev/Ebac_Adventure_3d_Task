@@ -107,17 +107,18 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
           Boss - Switch Attack
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_1.gif" width="230" height="300"/></td>
         </tr>
-        <tr>
-          Boss - Switch Walk
-          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_2.gif" width="230" height="300"/></td>
-          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_3.gif" width="230" height="300"/></td>
-          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_4.gif" width="230" height="300"/></td>
-            <tr>
-              <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_5.gif" width="230" height="300"/></td>
-            </tr>
-        </tr>
     </tr>
   </table>
-  
+  <table border="0">
+    <tr>
+        Boss - Switch Walk
+        <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_2.gif" width="230" height="300"/></td>
+        <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_3.gif" width="230" height="300"/></td>
+        <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_4.gif" width="230" height="300"/></td>
+          <tr>
+            <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_5.gif" width="230" height="300"/></td>
+          </tr>
+        </tr>
+  </table>
   
 </html>
