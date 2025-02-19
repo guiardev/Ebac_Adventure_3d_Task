@@ -102,7 +102,9 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     <tr>
         <tr>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_Boss_Base.png"/></td>
+          Boss - Switch Init
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_0.gif" width="330" height="400"/></td>
+          Boss - Switch Attack
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_1.gif" width="330" height="400"/></td>
         </tr>  
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_2.gif" width="330" height="400"/></td>
