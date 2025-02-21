@@ -75,7 +75,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
- O game vai ter baú que vai dar moedas para jogador.
+  O game vai ter baú que vai dar moedas para jogador, o baú vai detectar o player com Sphere Collider ativado Is Trigger e quando jogador estiver
+  perto do baú ele aperta a tecla E o bau abre e sair moedas.
 
   <table border="0">
       bau - Script ChestBase 
