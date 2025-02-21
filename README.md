@@ -75,6 +75,17 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
+ O game vai ter baú que vai dar moedas para jogador.
+
+  <table border="0">
+      bau - Script ChestBase 
+    <tr>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_chestBase.png" width="330" height="400"/></td>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_Chest.gif" width="230" height="300"/></td>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_Chest_2.gif" width="230" height="300"/></td>
+    </tr>
+  </table>
+
  O jogo vai ter árvores que podem ser destruídas com os tiros cada tiro que acerta árvores sai moedas, até a árvore perder toda sua vida e vai ser morre.
 
   <table border="0">
