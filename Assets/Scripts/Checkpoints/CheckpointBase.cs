@@ -7,7 +7,7 @@ public class CheckpointBase: MonoBehaviour{
     private string checkpointKey = "CheckpointKey";
     private bool checkpointActive = false;
     public MeshRenderer meshRenderer;
-    public int key = 01;
+    public int key = 01; // key numero checkpoint
 
     private void OnTriggerEnter(Collider col){
 
@@ -28,7 +28,7 @@ public class CheckpointBase: MonoBehaviour{
 
     [NaughtyAttributes.Button]
     private void TurnItOff(){
-        meshRenderer.material.SetColor("_EmissionColor", Color.gray);  // _EmissionColor e um variável do Material em Select shader
+        meshRenderer.material.SetColor("_EmissionColor", Color.black);  // _EmissionColor e um variável do Material em Select shader
     }
 
     private void SaveCheckpoint(){
@@ -38,7 +38,6 @@ public class CheckpointBase: MonoBehaviour{
         // }
 
         CheckpointManager.Instance.SaveCheckPoint(key);
-
         checkpointActive = true;
     }
     
