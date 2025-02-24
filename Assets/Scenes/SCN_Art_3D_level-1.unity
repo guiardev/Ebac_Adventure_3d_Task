@@ -1371,7 +1371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3780110329782003867, guid: 5ce185a952bcbde25ab948da3304c38d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4828419197151327309, guid: 5ce185a952bcbde25ab948da3304c38d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2740,15 +2740,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 192860403247030459, guid: e70fcda253eb77f438367bfee31e1477, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.76944
+      value: -0.53
       objectReference: {fileID: 0}
     - target: {fileID: 192860403247030459, guid: e70fcda253eb77f438367bfee31e1477, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.0028267
+      value: -1.27
       objectReference: {fileID: 0}
     - target: {fileID: 192860403247030459, guid: e70fcda253eb77f438367bfee31e1477, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -146.20346
+      value: -15.69
       objectReference: {fileID: 0}
     - target: {fileID: 192860403247030459, guid: e70fcda253eb77f438367bfee31e1477, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6540,6 +6540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint_A
       objectReference: {fileID: 0}
+    - target: {fileID: 8093440057613736454, guid: c297ccf6fe9e58ace8a5df15f719f172, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8955597464086344212, guid: c297ccf6fe9e58ace8a5df15f719f172, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -6551,10 +6555,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7437308482710821589, guid: c297ccf6fe9e58ace8a5df15f719f172, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c297ccf6fe9e58ace8a5df15f719f172, type: 3}
 --- !u!4 &1291127907 stripped
 Transform:
