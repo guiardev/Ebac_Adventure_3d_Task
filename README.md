@@ -48,8 +48,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
-  O jogo tem 3 tipos powerUps ItemClothStrong e ItemClothSpeed, ItemClothJump os powerUps pode dar poderes ao jogador por um segundos,
-  como aumentar velocidade do player dar mais força e dar pula maior e também muda cor da roupa do player
+  O jogo tem 3 tipos powerUps ItemClothStrong e ItemClothSpeed, ItemClothJump os powerUps pode dar poderes ao jogador por um segundos, 
+  como aumentar velocidade do player ou dar mais força e aumentar pula e também muda cor da roupa do player depende do powerUps.
 
   Image dos 3 powerUps
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_powerUps.png" width="430" height="100"/></td>
@@ -65,6 +65,11 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
+  O script cloth manager vai gerir roupas do player e os tipos de roupas e com os nomes delas.
+  
+  Script - ClothManager
+  <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_ClothManager.png" width="430" height="300"/></td>
+
   Aqui 3 screenshot dos configurações do powerUps:
 
   <table border="0">
@@ -74,6 +79,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemClothStrong.png" width="230" height="300"/></td>
     </tr>
   </table>
+
+  
 
   O game vai ter baú que vai dar moedas para jogador, o baú vai detectar o player com Sphere Collider ativado Is Trigger e quando jogador estiver
   perto do baú ele aperta a tecla E o bau abre e sair moedas.
