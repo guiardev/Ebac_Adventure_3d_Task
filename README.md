@@ -48,12 +48,12 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
-  Os Itens que podem ser coletadas são moedas e life.
+  Os Itens que podem ser coletadas são moedas e life. o script itemcollectableBase será configurado para qualquer item que coletava.
   
   <table border="0">
     <tr>
       Script - ItemCollectableBase
-      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemCollectableBase.png" width="400" height="300"/></td>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemCollectableBase.png" width="400" height="200"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_ItemCoin.gif" width="330" height="300"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_ItemLife.gif" width="330" height="300"/></td>
     </tr>
