@@ -53,7 +53,7 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
   <table border="0">
     <tr>
       Script - ItemCollectableBase
-      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemCollectableBase.png" width="400" height="200"/></td>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemCollectableBase.png" width="500" height="200"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_ItemCoin.gif" width="330" height="300"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_ItemLife.gif" width="330" height="300"/></td>
     </tr>
