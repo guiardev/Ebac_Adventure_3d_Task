@@ -147,12 +147,13 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
         </tr>
   </table>
 
-  Checkpoint vai salvar o jogo quando o player morre no game, e quando jogador passar checkpoint vai aparecer texto em cima do checkpoint Save Game.
+  Checkpoint vai salvar o jogo quando o player morre no game, e quando jogador passar checkpoint vai aparecer texto em cima do checkpoint Save Game, o 
+  checkpoint Manager vai gerenciar quantos checkpoint tem fase e qual e última key do checkpoint.
   
    <table>
         <tr>
            Script CheckpointBase and CheckpointManager
-           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_CheckpointBase.png" width="350" height="100"/><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_CheckpointManager.png" width="350" height="100"/></td>
+           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_CheckpointBase.png" width="400" height="100"/><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_CheckpointManager.png" width="400" height="100"/></td>
            <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_Checkpoint_0.gif" width="230" height="300"/></td>
            <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_Checkpoint_1.gif" width="230" height="300"/></td>
         </tr>
