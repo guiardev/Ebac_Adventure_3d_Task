@@ -1,6 +1,11 @@
 # Ebac_Adventure_3d_Task Unity 3D
 
-Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizando Unity 3D
+Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizando Unity 3D.
+
+O Menu do jogo terá duas opções: um play para entrar cena gameplay e outro exit para sair do game e informações sobre como controlar
+o personagem e sobre comando do game.
+
+<td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_menu.gif" width="630" height="500"/></td>
 
 Esse jogo é 3D e permite controlar um personagem que pode andar para todos lados e atira, pula e pegar moedas e lifePack e também powerUps.
 
@@ -59,6 +64,9 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
+  O item manager vai gerenciar os itens coletáveis na cena.
+  <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemManager.png" width="430" height="300"/></td>
+
   O jogo tem 3 tipos powerUps ItemClothStrong e ItemClothSpeed, ItemClothJump os powerUps pode dar poderes ao jogador por um segundos, 
   como aumentar velocidade do player ou dar mais força e aumentar pula e também muda cor da roupa do player depende do powerUps.
 
@@ -91,8 +99,6 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
-  
-
   O game vai ter baú que vai dar moedas para jogador, o baú vai detectar o player com Sphere Collider ativado Is Trigger e quando jogador estiver
   perto do baú ele aperta a tecla E o bau abre e sair moedas.
 
@@ -114,7 +120,6 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_034_Tree_Coins.gif" width="330" height="400"/></td>
     </tr>
   </table>
- 
 
   O jogo vai ter 2 tipos de inimigo um e o Enemy Shoot que vai ficar parado e vai atirar quando player fica perto dele e vai mirar no personagem, 
   outro Enemy Walk que vai seguir um caminho programado pelos objetos waypoints point_a, point_b e point_c que ele vai seguir.
@@ -176,6 +181,10 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
            <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_Checkpoint_1.gif" width="230" height="300"/></td>
         </tr>
   </table>
+
+  O Save Manager vai ser responsável por salvar informações do jogador como coins último level e nome do player, e o script vai criar arquivo do game.
+
+  <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SaveManager.png" width="330" height="200"/></td>
   
   CinemachineStateDrivenCamera está configurado 3 câmera virtual e opções Follow e Look At está selecionado player.
   
