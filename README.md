@@ -158,6 +158,8 @@ E tem especificação character controller e box collider.
     </tr>
   </table>
 
+  # Boss
+
   O Boss pode ser controlado pelo script boss base no inspector unity no gameobject Boss tem 3 botão que vai fazer ações como iniciar boss Switch Init
   e fazer boss andar no cenário seguindo objetos waypoints A, B e C Switch Walk, e último botão faz boss atacar Switch Attack.
 
