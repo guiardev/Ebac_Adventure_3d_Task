@@ -223,11 +223,13 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
 
   <table>
         <tr>
-          Script SoundManager - AudioSource - Script MusicPlayer - Script SFXPool
+          Script SoundManager - AudioSource - Script MusicPlayer
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SoundManager.png" width="330" height="400"/></td>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_Music_AudioSource_MusicPlayer.png" width="330" height="400"/></td>
-          <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SFXPool.png" width="450" height="100"/></td>
         </tr>
   </table>
+
+  Script SFXPool
+  <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SFXPool.png" width="450" height="100"/></td>
   
 </html>
