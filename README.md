@@ -219,7 +219,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
         </tr>
   </table>
 
-  O sistem de audio do game
+  O sistema de áudio do game SoundManager é responsável com todos áudios do jogo com name som e com áudio clip o SoundManager terá dois tipos de setups music e sfx.
+  No AudioSource com script MusicPlayer vai ser responsável tocar música no jogo. 
 
   <table>
         <tr>
