@@ -230,6 +230,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
         </tr>
   </table>
 
+  O sfxPool vai resolver um problema quando toca vários audios ele corta último áudio, e script sfxpool vai criar lista áudios assim ele toca um por vez.
+
   Script SFXPool
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SFXPool.png" width="450" height="100"/></td>
   
