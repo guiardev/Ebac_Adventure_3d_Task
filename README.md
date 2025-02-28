@@ -2,6 +2,8 @@
 
 Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizando Unity 3D.
 
+# Menu do game
+
 O Menu do jogo terá duas opções: um play para entrar cena gameplay e outro exit para sair do game e informações sobre como controlar
 o personagem e sobre comando do game.
 
