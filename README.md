@@ -9,6 +9,8 @@ o personagem e sobre comando do game.
 
 <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_menu.gif" width="630" height="500"/></td>
 
+# Movimentação do personagem e controle
+
 Esse jogo é 3D e permite controlar um personagem que pode andar para todos lados e atira, pula e pegar moedas e lifePack e também powerUps.
 
 <html>
@@ -22,8 +24,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
   </table>
 </html>
 
-   Mostrando screenshot das configurações scripts e do inspector player: playerController e playerAbilityShoot, 
-   healthBase. E tem especificação character controller e box collider.
+Mostrando screenshot das configurações scripts e do inspector player: playerController e playerAbilityShoot, healthBase. 
+E tem especificação character controller e box collider.
     
 <html>
 
@@ -34,6 +36,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_transform-chanactarController-boxCollider.png" width="230" height="300"/></td>
     </tr>
   </table>
+
+  # Vida do player
   
   O player vai ter um barra de life em cima da cabeça quando personagem for atingido pelo inimigo a barra vai diminuir, 
   se barra da vida abarcar o player morre.
@@ -45,6 +49,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
+  # Attack do player
+
   O personagem pode atirar por um tiros limitado e tem barra circular cada tiro que o jogador tirar da barra diminui seu tamanho, 
   e quando barra circular desaparecer o player vai ficar uns segundos sem poder atirar e barra volta seu tamanho original.
 
@@ -55,6 +61,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
+  # Item coletáveis
+  
   Os Itens que podem ser coletadas são moedas e life. o script itemcollectableBase será configurado para qualquer item que coletava.
   
   <table border="0">
@@ -68,6 +76,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
 
   O item manager vai gerenciar os itens coletáveis na cena.
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemManager.png" width="430" height="300"/></td>
+
+  # PowerUps e Roupas
 
   O jogo tem 3 tipos powerUps ItemClothStrong e ItemClothSpeed, ItemClothJump os powerUps pode dar poderes ao jogador por um segundos, 
   como aumentar velocidade do player ou dar mais força e aumentar pula e também muda cor da roupa do player depende do powerUps.
@@ -101,6 +111,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
+  # Baú
+
   O game vai ter baú que vai dar moedas para jogador, o baú vai detectar o player com Sphere Collider ativado Is Trigger e quando jogador estiver
   perto do baú ele aperta a tecla E o bau abre e sair moedas.
 
@@ -113,6 +125,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
+  # Arvores
+
  O jogo vai ter árvores que podem ser destruídas com os tiros cada tiro que acerta árvores sai moedas, até a árvore perder toda sua vida e vai ser morre.
 
   <table border="0">
@@ -122,6 +136,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_034_Tree_Coins.gif" width="330" height="400"/></td>
     </tr>
   </table>
+
+  # Enemy Shoot e Enemy Walk
 
   O jogo vai ter 2 tipos de inimigo um e o Enemy Shoot que vai ficar parado e vai atirar quando player fica perto dele e vai mirar no personagem, 
   outro Enemy Walk que vai seguir um caminho programado pelos objetos waypoints point_a, point_b e point_c que ele vai seguir.
@@ -172,6 +188,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
         </tr>
   </table>
 
+  # Checkpoint
+
   Checkpoint vai salvar o jogo quando o player morre no game, e quando jogador passar checkpoint vai aparecer texto em cima do checkpoint Save Game, o 
   checkpoint Manager vai gerenciar quantos checkpoint tem fase e qual e última key do checkpoint.
   
@@ -184,9 +202,13 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
         </tr>
   </table>
 
+  # Save
+
   O Save Manager vai ser responsável por salvar informações do jogador como coins último level e nome do player, e o script vai criar arquivo do game.
 
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SaveManager.png" width="330" height="200"/></td>
+
+  # Camera
   
   CinemachineStateDrivenCamera está configurado 3 câmera virtual e opções Follow e Look At está selecionado player.
   
@@ -196,6 +218,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_DrivenCamera.png" width="330" height="400"/></td>
         </tr>
   </table>
+
+  # VFX
 
   O GameObject VFX_Rain vai estar com configurações Particle System que está simulando chuva.
 
@@ -220,6 +244,8 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem_Renderer.png" width="330" height="400"/></td>
         </tr>
   </table>
+
+  # Sound do game
 
   O sistema de áudio do game SoundManager é responsável com todos áudios do jogo com name som e com áudio clip o SoundManager terá dois tipos de setups music e sfx.
   No AudioSource com script MusicPlayer vai ser responsável tocar música no jogo. 
