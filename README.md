@@ -67,12 +67,14 @@ E tem especificação character controller e box collider.
   
   <table border="0">
     <tr>
-      Script - ItemCollectableBase
-      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemCollectableBase.png" width="400" height="200"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_ItemCoin.gif" width="330" height="300"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_ItemLife.gif" width="330" height="300"/></td>
     </tr>
   </table>
+
+  Script - ItemCollectableBase
+  
+  <img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemCollectableBase.png" width="400" height="200"/>
 
   O item manager vai gerenciar os itens coletáveis na cena.
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemManager.png" width="430" height="300"/></td>
