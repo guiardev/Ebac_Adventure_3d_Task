@@ -83,7 +83,7 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
     </tr>
   </table>
 
-  Script - ItemCollectableBase
+  <h3>Script - ItemCollectableBase</h3>
   
   <img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemCollectableBase.png" width="400" height="200"/>
 
@@ -100,18 +100,18 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
 
   <table border="0">
     <tr>
-      PowerUps - Super Jump |
+      <h3>PowerUps - Super Jump</h3> |
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_037.gif" width="230" height="300"/></td>
-      PowerUps - Super Speed |
+      <h3>PowerUps - Super Speed</h3> |
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_038.gif" width="230" height="300"/></td>
-      PowerUps - Super Strong
+      <h3>PowerUps - Super Strong</h3>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_034.gif" width="230" height="300"/></td>
     </tr>
   </table>
 
   + O script cloth manager vai gerir roupas do player e os tipos de roupas e com os nomes delas.
   
-  + Script - ClothManager
+  + <h3>Script - ClothManager</h3>
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_ClothManager.png" width="430" height="300"/></td>
 
   + Aqui 3 screenshot dos configurações do powerUps:
@@ -130,7 +130,7 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
   perto do baú ele aperta a tecla E o bau abre e sair moedas.
 
   <table border="0">
-      bau - Script ChestBase 
+      <h3>bau - Script ChestBase</h3>
     <tr>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_chestBase.png" width="330" height="400"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_Chess_0.gif" width="230" height="300"/></td>
@@ -143,7 +143,7 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
  + O jogo vai ter árvores que podem ser destruídas com os tiros cada tiro que acerta árvores sai moedas, até a árvore perder toda sua vida e vai ser morre.
 
   <table border="0">
-      Tree - Script DestructableItemBase
+      <h3>Tree - Script DestructableItemBase</h3>
     <tr>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_DestructableItemBase_HealthBase.png" width="330" height="400"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_034_Tree_Coins.gif" width="330" height="400"/></td>
@@ -152,11 +152,11 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
 
   <h1 id="C9">Enemy Shoot e Enemy Walk</h1>
 
-  O jogo vai ter 2 tipos de inimigo um e o Enemy Shoot que vai ficar parado e vai atirar quando player fica perto dele e vai mirar no personagem, 
+  + O jogo vai ter 2 tipos de inimigo um e o Enemy Shoot que vai ficar parado e vai atirar quando player fica perto dele e vai mirar no personagem, 
   outro Enemy Walk que vai seguir um caminho programado pelos objetos waypoints point_a, point_b e point_c que ele vai seguir.
 
   <table border="0">
-      Enemy Shoot - Script EnemyShoot
+      <h3>Enemy Shoot - Script EnemyShoot</h3>
     <tr>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_042.gif" width="330" height="400"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_Enemy_shoot.png" width="330" height="400"/></td>
@@ -164,7 +164,7 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
   </table>
 
   <table border="0">
-      Enemy Walk - Script EnemyWalk
+       <h3>Enemy Walk - Script EnemyWalk</h3>
     <tr>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_043.gif" width="330" height="400"/></td>
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_Enemy_Walk.png" width="330" height="400"/></td>
@@ -177,20 +177,20 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
   e fazer boss andar no cenário seguindo objetos waypoints A, B e C Switch Walk, e último botão faz boss atacar Switch Attack.
 
   <table border="0">
-    Boss - Script Boss Base
+    <h3>Boss - Script Boss Base</h3>
     <tr>
         <tr>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_Boss_Base.png" width="330" height="400"/></td>
-          Boss - Switch Init |
+          <h3>Boss - Switch Init</h3> |
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_0.gif" width="230" height="300"/></td>
-          Boss - Switch Attack
+          <h3>Boss - Switch Attack</h3>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_1.gif" width="230" height="300"/></td>
         </tr>
     </tr>
   </table>
   <table border="0">
     <tr>
-        Boss - Switch Walk
+        <h3>Boss - Switch Walk</h3>
         <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_2.gif" width="230" height="300"/></td>
         <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_3.gif" width="230" height="300"/></td>
         <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_4.gif" width="230" height="300"/></td>
@@ -210,7 +210,7 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
   
    <table>
         <tr>
-           Script CheckpointBase and CheckpointManager
+           <h3>Script CheckpointBase and CheckpointManager</h3>
            <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_CheckpointBase.png" width="400" height="100"/><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_CheckpointManager.png" width="400" height="100"/></td>
            <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_Checkpoint_0.gif" width="230" height="300"/></td>
            <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_Checkpoint_1.gif" width="230" height="300"/></td>
@@ -229,7 +229,7 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
   
   <table>
         <tr>
-          Câmera - CinemachineStateDrivenCamera
+          <h3>Câmera - CinemachineStateDrivenCamera</h3>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_DrivenCamera.png" width="330" height="400"/></td>
         </tr>
   </table>
@@ -246,7 +246,7 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
 
    <table>
         <tr>
-          VFX_Rain - Particle System - Emission - Shape
+          <h3>VFX_Rain - Particle System - Emission - Shape</h3>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem.png" width="330" height="400"/></td>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem_Emission_Shape.png" width="330" height="400"/></td>
         </tr>
@@ -254,7 +254,7 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
   
   <table>
         <tr>
-          Size over Lifetime - Rotation over Lifetime - Noise - Renderer
+          <h3>Size over Lifetime - Rotation over Lifetime - Noise - Renderer</h3>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem_Size-over-Lifetime_Rotation-over-Lifetime_Noise.png" width="330" height="400"/</td>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_particleSystem_Renderer.png" width="330" height="400"/></td>
         </tr>
@@ -267,7 +267,7 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
 
   <table>
         <tr>
-          Script SoundManager - AudioSource - Script MusicPlayer
+          <h3>Script SoundManager - AudioSource - Script MusicPlayer</h3>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SoundManager.png" width="330" height="400"/></td>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_Music_AudioSource_MusicPlayer.png" width="330" height="400"/></td>
         </tr>
@@ -275,5 +275,5 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
 
   + O sfxPool vai resolver um problema quando toca vários audios ele corta último áudio, e script sfxpool vai criar lista áudios assim ele toca um por vez.
 
-  Script SFXPool
+  <h3>Script SFXPool</h3>
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SFXPool.png" width="450" height="100"/></td>
