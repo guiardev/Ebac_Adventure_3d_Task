@@ -181,9 +181,9 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
     <tr>
         <tr>
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_Boss_Base.png" width="330" height="400"/></td>
-          <h3>Boss - Switch Init</h3> |
+          Boss - Switch Init |
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_0.gif" width="230" height="300"/></td>
-          <h3>Boss - Switch Attack</h3>
+          Boss - Switch Attack
           <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_1.gif" width="230" height="300"/></td>
         </tr>
     </tr>
