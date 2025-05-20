@@ -33,9 +33,9 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
 
   <table border="0">
     <tr>
-      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_019.gif" width="230" height="300"/></td>
-      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_025.gif" width="230" height="300"/></td>
-      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_026.gif" width="230" height="300"/></td>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_019.gif" width="290" height="360"/></td>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_025.gif" width="290" height="360"/></td>
+      <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_026.gif" width="290" height="360"/></td>
     </tr>
   </table>
 
