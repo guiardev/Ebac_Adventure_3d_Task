@@ -100,11 +100,11 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
 
   <table border="0">
     <tr>
-      <h3>PowerUps - Super Jump</h3> |
+      PowerUps - Super Jump |
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_037.gif" width="230" height="300"/></td>
-      <h3>PowerUps - Super Speed</h3> |
+      PowerUps - Super Speed |
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_038.gif" width="230" height="300"/></td>
-      <h3>PowerUps - Super Strong</h3>
+      PowerUps - Super Strong
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_034.gif" width="230" height="300"/></td>
     </tr>
   </table>
