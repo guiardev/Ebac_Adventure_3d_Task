@@ -2,18 +2,31 @@
 
 Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizando Unity 3D.
 
-# Menu do game
+<h2>Sumário</h2>
+    <ol>
+        <li><h4><a href="#C1">Menu Game</a></h4></li>
+        <li><h4><a href="#C2">Movimentação do personagem e controle</a></h4></li>
+        <li><h4><a href="#C3">Moedas</a></h4></li>
+        <li><h4><a href="#C4">Obstáculos</a></h4></li>
+        <li><h4><a href="#C5">Gameover</a></h4></li>
+        <li><h4><a href="#C6">PowerUps</a></h4></li>
+        <li><h4><a href="#C7">Animation</a></h4></li>
+        <li><h4><a href="#C8">Level Manager</a></h4></li>
+        <li><h4><a href="#C9">Level Manager Pieces</a></h4></li>
+        <li><h4><a href="#C10">VFX and Particulas</a></h4></li>
+    </ol>
+
+<h1 id="C1">Menu do game</h1>
 
 O Menu do jogo terá duas opções: um play para entrar cena gameplay e outro exit para sair do game e informações sobre como controlar
 o personagem e sobre comando do game.
 
 <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_menu.gif" width="630" height="500"/></td>
 
-# Movimentação do personagem e controle
+<h1 id="C2">Movimentação do personagem e controle</h1>
 
 Esse jogo é 3D e permite controlar um personagem que pode andar para todos lados e atira, pula e pegar moedas e lifePack e também powerUps.
 
-<html>
 
   <table border="0">
     <tr>
@@ -22,12 +35,11 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
       <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_026.gif" width="230" height="300"/></td>
     </tr>
   </table>
-</html>
+
 
 Mostrando screenshot das configurações scripts e do inspector player: playerController e playerAbilityShoot, healthBase. 
 E tem especificação character controller e box collider.
     
-<html>
 
   <table border="0">
     <tr>
@@ -266,5 +278,3 @@ E tem especificação character controller e box collider.
 
   Script SFXPool
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SFXPool.png" width="450" height="100"/></td>
-  
-</html>
