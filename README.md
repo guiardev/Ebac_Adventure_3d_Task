@@ -6,27 +6,30 @@ Projeto feito no cursos Ebac, nesse curso eu aprendi a desenvolver game utilizan
     <ol>
         <li><h4><a href="#C1">Menu Game</a></h4></li>
         <li><h4><a href="#C2">Movimentação do personagem e controle</a></h4></li>
-        <li><h4><a href="#C3">Moedas</a></h4></li>
-        <li><h4><a href="#C4">Obstáculos</a></h4></li>
-        <li><h4><a href="#C5">Gameover</a></h4></li>
-        <li><h4><a href="#C6">PowerUps</a></h4></li>
-        <li><h4><a href="#C7">Animation</a></h4></li>
-        <li><h4><a href="#C8">Level Manager</a></h4></li>
-        <li><h4><a href="#C9">Level Manager Pieces</a></h4></li>
-        <li><h4><a href="#C10">VFX and Particulas</a></h4></li>
+        <li><h4><a href="#C3">Vida do player</a></h4></li>
+        <li><h4><a href="#C4">Attack do player</a></h4></li>
+        <li><h4><a href="#C5">Item coletáveis</a></h4></li>
+        <li><h4><a href="#C6">PowerUps e Roupas</a></h4></li>
+        <li><h4><a href="#C7">Baú</a></h4></li>
+        <li><h4><a href="#C8">Arvores</a></h4></li>
+        <li><h4><a href="#C9">Enemy Shoot e Enemy Walk</a></h4></li>
+        <li><h4><a href="#C10">Boss</a></h4></li>
+        <li><h4><a href="#C11">Checkpoint</a></h4></li>
+        <li><h4><a href="#C12">Save</a></h4></li>
+        <li><h4><a href="#C13">Camera</a></h4></li>
+        <li><h4><a href="#C14">VFX and Particulas</a></h4></li>
+        <li><h4><a href="#C15">Sound do game</a></h4></li>
     </ol>
 
 <h1 id="C1">Menu do game</h1>
 
-O Menu do jogo terá duas opções: um play para entrar cena gameplay e outro exit para sair do game e informações sobre como controlar
-o personagem e sobre comando do game.
++ O Menu do jogo terá duas opções: um play para entrar cena gameplay e outro exit para sair do game e informações sobre como controlar o personagem e sobre comando do game.
 
 <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Movie_menu.gif" width="630" height="500"/></td>
 
 <h1 id="C2">Movimentação do personagem e controle</h1>
 
-Esse jogo é 3D e permite controlar um personagem que pode andar para todos lados e atira, pula e pegar moedas e lifePack e também powerUps.
-
++ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lados e atira, pula e pegar moedas e lifePack e também powerUps.
 
   <table border="0">
     <tr>
@@ -36,10 +39,7 @@ Esse jogo é 3D e permite controlar um personagem que pode andar para todos lado
     </tr>
   </table>
 
-
-Mostrando screenshot das configurações scripts e do inspector player: playerController e playerAbilityShoot, healthBase. 
-E tem especificação character controller e box collider.
-    
+ + Mostrando screenshot das configurações scripts e do inspector player: playerController e playerAbilityShoot, healthBase. E tem especificação character controller e box collider.
 
   <table border="0">
     <tr>
@@ -49,10 +49,9 @@ E tem especificação character controller e box collider.
     </tr>
   </table>
 
-  # Vida do player
+  <h1 id="C3">Vida do player</h1>
   
-  O player vai ter um barra de life em cima da cabeça quando personagem for atingido pelo inimigo a barra vai diminuir, 
-  se barra da vida abarcar o player morre.
+  + O player vai ter um barra de life em cima da cabeça quando personagem for atingido pelo inimigo a barra vai diminuir, se barra da vida abarcar o player morre.
 
   <table border="0">
     <tr>
@@ -61,10 +60,10 @@ E tem especificação character controller e box collider.
     </tr>
   </table>
 
-  # Attack do player
+  <h1 id="C4">Attack do player</h1>
 
-  O personagem pode atirar por um tiros limitado e tem barra circular cada tiro que o jogador tirar da barra diminui seu tamanho, 
-  e quando barra circular desaparecer o player vai ficar uns segundos sem poder atirar e barra volta seu tamanho original.
+  + O personagem pode atirar por um tiros limitado e tem barra circular cada tiro que o jogador tirar da barra diminui seu tamanho, e quando barra circular desaparecer o player vai
+    ficar uns segundos sem poder atirar e barra volta seu tamanho original.
 
    <table border="0">
     <tr>
@@ -73,9 +72,9 @@ E tem especificação character controller e box collider.
     </tr>
   </table>
 
-  # Item coletáveis
+  <h1 id="C5">Item coletáveis</h1>
   
-  Os Itens que podem ser coletadas são moedas e life. o script itemcollectableBase será configurado para qualquer item que coletava.
+  + Os Itens que podem ser coletadas são moedas e life. o script itemcollectableBase será configurado para qualquer item que coletava.
   
   <table border="0">
     <tr>
@@ -88,15 +87,15 @@ E tem especificação character controller e box collider.
   
   <img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemCollectableBase.png" width="400" height="200"/>
 
-  O item manager vai gerenciar os itens coletáveis na cena.
+  + O item manager vai gerenciar os itens coletáveis na cena.
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_ItemManager.png" width="430" height="300"/></td>
 
-  # PowerUps e Roupas
+  <h1 id="C6">PowerUps e Roupas</h1>
 
-  O jogo tem 3 tipos powerUps ItemClothStrong e ItemClothSpeed, ItemClothJump os powerUps pode dar poderes ao jogador por um segundos, 
+  + O jogo tem 3 tipos powerUps ItemClothStrong e ItemClothSpeed, ItemClothJump os powerUps pode dar poderes ao jogador por um segundos, 
   como aumentar velocidade do player ou dar mais força e aumentar pula e também muda cor da roupa do player depende do powerUps.
 
-  Image dos 3 powerUps
+  + Image dos 3 powerUps
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_powerUps.png" width="430" height="100"/></td>
 
   <table border="0">
@@ -110,12 +109,12 @@ E tem especificação character controller e box collider.
     </tr>
   </table>
 
-  O script cloth manager vai gerir roupas do player e os tipos de roupas e com os nomes delas.
+  + O script cloth manager vai gerir roupas do player e os tipos de roupas e com os nomes delas.
   
-  Script - ClothManager
+  + Script - ClothManager
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_ClothManager.png" width="430" height="300"/></td>
 
-  Aqui 3 screenshot dos configurações do powerUps:
+  + Aqui 3 screenshot dos configurações do powerUps:
 
   <table border="0">
     <tr>
@@ -125,9 +124,9 @@ E tem especificação character controller e box collider.
     </tr>
   </table>
 
-  # Baú
+  <h1 id="C7">Baú</h1>
 
-  O game vai ter baú que vai dar moedas para jogador, o baú vai detectar o player com Sphere Collider ativado Is Trigger e quando jogador estiver
+  + O game vai ter baú que vai dar moedas para jogador, o baú vai detectar o player com Sphere Collider ativado Is Trigger e quando jogador estiver
   perto do baú ele aperta a tecla E o bau abre e sair moedas.
 
   <table border="0">
@@ -139,9 +138,9 @@ E tem especificação character controller e box collider.
     </tr>
   </table>
 
-  # Arvores
+  <h1 id="C8">Arvores</h1>
 
- O jogo vai ter árvores que podem ser destruídas com os tiros cada tiro que acerta árvores sai moedas, até a árvore perder toda sua vida e vai ser morre.
+ + O jogo vai ter árvores que podem ser destruídas com os tiros cada tiro que acerta árvores sai moedas, até a árvore perder toda sua vida e vai ser morre.
 
   <table border="0">
       Tree - Script DestructableItemBase
@@ -151,7 +150,7 @@ E tem especificação character controller e box collider.
     </tr>
   </table>
 
-  # Enemy Shoot e Enemy Walk
+  <h1 id="C9">Enemy Shoot e Enemy Walk</h1>
 
   O jogo vai ter 2 tipos de inimigo um e o Enemy Shoot que vai ficar parado e vai atirar quando player fica perto dele e vai mirar no personagem, 
   outro Enemy Walk que vai seguir um caminho programado pelos objetos waypoints point_a, point_b e point_c que ele vai seguir.
@@ -172,9 +171,9 @@ E tem especificação character controller e box collider.
     </tr>
   </table>
 
-  # Boss
+  <h1 id="C10">Boss</h1>
 
-  O Boss pode ser controlado pelo script boss base no inspector unity no gameobject Boss tem 3 botão que vai fazer ações como iniciar boss Switch Init
+  + O Boss pode ser controlado pelo script boss base no inspector unity no gameobject Boss tem 3 botão que vai fazer ações como iniciar boss Switch Init
   e fazer boss andar no cenário seguindo objetos waypoints A, B e C Switch Walk, e último botão faz boss atacar Switch Attack.
 
   <table border="0">
@@ -199,14 +198,14 @@ E tem especificação character controller e box collider.
   </table>
   <table>
         <tr>
-           Quando inimigo chegar no waypoint ele vai ataque e depois ele segue outro waypoint.
+           + Quando inimigo chegar no waypoint ele vai ataque e depois ele segue outro waypoint.
            <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/Recordings/Boss_5.gif" width="230" height="300"/></td>
         </tr>
   </table>
 
-  # Checkpoint
+  <h1 id="C11">Checkpoint</h1>
 
-  Checkpoint vai salvar o jogo quando o player morre no game, e quando jogador passar checkpoint vai aparecer texto em cima do checkpoint Save Game, o 
+  + Checkpoint vai salvar o jogo quando o player morre no game, e quando jogador passar checkpoint vai aparecer texto em cima do checkpoint Save Game, o 
   checkpoint Manager vai gerenciar quantos checkpoint tem fase e qual e última key do checkpoint.
   
    <table>
@@ -218,15 +217,15 @@ E tem especificação character controller e box collider.
         </tr>
   </table>
 
-  # Save
+  <h1 id="C12">Save</h1>
 
-  O Save Manager vai ser responsável por salvar informações do jogador como coins último level e nome do player, e o script vai criar arquivo do game.
+  + O Save Manager vai ser responsável por salvar informações do jogador como coins último level e nome do player, e o script vai criar arquivo do game.
 
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SaveManager.png" width="330" height="200"/></td>
 
-  # Camera
+  <h1 id="C13">Camera</h1>
   
-  CinemachineStateDrivenCamera está configurado 3 câmera virtual e opções Follow e Look At está selecionado player.
+  + CinemachineStateDrivenCamera está configurado 3 câmera virtual e opções Follow e Look At está selecionado player.
   
   <table>
         <tr>
@@ -235,9 +234,9 @@ E tem especificação character controller e box collider.
         </tr>
   </table>
 
-  # VFX
+  <h1 id="C14">VFX e Particle System</h1>
 
-  O GameObject VFX_Rain vai estar com configurações Particle System que está simulando chuva.
+  + O GameObject VFX_Rain vai estar com configurações Particle System que está simulando chuva.
 
   <table>
       <tr>
@@ -261,9 +260,9 @@ E tem especificação character controller e box collider.
         </tr>
   </table>
 
-  # Sound do game
+  <h1 id="C15">Sound do game</h1>
 
-  O sistema de áudio do game SoundManager é responsável com todos áudios do jogo com name som e com áudio clip o SoundManager terá dois tipos de setups music e sfx.
+  + O sistema de áudio do game SoundManager é responsável com todos áudios do jogo com name som e com áudio clip o SoundManager terá dois tipos de setups music e sfx.
   No AudioSource com script MusicPlayer vai ser responsável tocar música no jogo. 
 
   <table>
@@ -274,7 +273,7 @@ E tem especificação character controller e box collider.
         </tr>
   </table>
 
-  O sfxPool vai resolver um problema quando toca vários audios ele corta último áudio, e script sfxpool vai criar lista áudios assim ele toca um por vez.
+  + O sfxPool vai resolver um problema quando toca vários audios ele corta último áudio, e script sfxpool vai criar lista áudios assim ele toca um por vez.
 
   Script SFXPool
   <td><img src="https://github.com/guiardev/Ebac_Adventure_3d_Task/blob/develop/Assets/imgs/img_script_SFXPool.png" width="450" height="100"/></td>
